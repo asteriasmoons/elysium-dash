@@ -21,6 +21,10 @@ app.get("/ping", (req, res) => {
   res.send("pong");
 });
 
+app.get("/", (req, res) => {
+  res.send("Elysium Dashboard API is running 🚀");
+});
+
 // Start server
 app.listen(port, () => {
   console.log(`✅ API running on http://localhost:${port}`);
