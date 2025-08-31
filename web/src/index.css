@@ -1,0 +1,62 @@
+@import "./styles/tokens.css";
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-dark);
+  background-color: var(--bg-dark);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: var(--brand-pink);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--brand-purple);
+}
+
+/* Headings */
+h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Buttons */
+button {
+  border-radius: var(--radius-md);
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background: linear-gradient(135deg, var(--brand-orange), var(--brand-pink), var(--brand-purple));
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: var(--shadow-card);
+}
+button:hover {
+  opacity: 0.9;
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--brand-pink);
+  outline-offset: 2px;
+}
